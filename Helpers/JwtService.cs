@@ -8,13 +8,14 @@ namespace MindSurf.Helpers
     public class JwtService
     {
         private string secureKey = "This is a very secure key";
-        public string Generate(int id)
+        public string Generate(int id, int rememberme)
         {
             var symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secureKey));
             var credentials = new SigningCredentials(symmetricSecurityKey, SecurityAlgorithms.HmacSha256Signature);
             var header = new JwtHeader(credentials);
 
-            var payLoad = new JwtPayload(id.ToString(), null, null, null, DateTime.Today.AddDays(1)); //1 Day
+            var payLoad = new JwtPayload(id.ToString(), null, null, null, rememberme == 1 ? DateTime.Today.AddDays(30) : DateTime.Today.AddDays(1)); //30 Days or 1 day
+
             var securityToken = new JwtSecurityToken(header, payLoad);
 
             return new JwtSecurityTokenHandler().WriteToken(securityToken);

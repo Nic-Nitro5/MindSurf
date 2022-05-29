@@ -36,11 +36,9 @@ namespace MindSurf.Controllers
         {
             var user = _repository.GetByEmail(dto.Email);
 
-            //Update user if remember me is set
-            if(dto.RememberMe == true)
-            {
-                _repository.Update(user);
-            }
+            //Update user if remember me
+            user.RememberMe = dto.RememberMe;
+            _repository.UpdateUser(user);
 
             if(user == null)
             {
@@ -52,7 +50,7 @@ namespace MindSurf.Controllers
                 return BadRequest(new { message = "Invalid Credentials" });
             }
 
-            var jwt = _jwtService.Generate(user.Id);
+            var jwt = _jwtService.Generate(user.Id, dto.RememberMe);
 
             Response.Cookies.Append("jwt", jwt, new Microsoft.AspNetCore.Http.CookieOptions
             {
@@ -83,7 +81,7 @@ namespace MindSurf.Controllers
             }
             catch
             {
-                return Unauthorized();
+                return BadRequest(new { message = "unauthorized" });
             }
         }
 
