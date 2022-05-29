@@ -36,6 +36,12 @@ namespace MindSurf.Controllers
         {
             var user = _repository.GetByEmail(dto.Email);
 
+            //Update user if remember me is set
+            if(dto.RememberMe == true)
+            {
+                _repository.Update(user);
+            }
+
             if(user == null)
             {
                 return BadRequest(new { message = "Invalid Credentials" });

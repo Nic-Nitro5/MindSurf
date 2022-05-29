@@ -31,6 +31,9 @@ namespace MindSurf.Migrations
                     b.Property<string>("Password")
                         .HasColumnType("text");
 
+                    b.Property<bool>("RememberMe")
+                        .HasColumnType("tinyint(1)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("Email")

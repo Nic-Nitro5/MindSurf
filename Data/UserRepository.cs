@@ -18,6 +18,14 @@ namespace MindSurf.Data
             return user;
         }
 
+        public User Update(User user)
+        {
+            _context.Users.Update(user);
+            _context.SaveChanges();
+
+            return user;
+        }
+
         public User GetByEmail(string email) {
             return _context.Users.FirstOrDefault(u => u.Email == email);
         }

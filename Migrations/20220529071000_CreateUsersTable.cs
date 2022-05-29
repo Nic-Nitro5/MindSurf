@@ -15,6 +15,7 @@ namespace MindSurf.Migrations
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(nullable: true),
                     Email = table.Column<string>(nullable: true),
+                    RememberMe = table.Column<bool>(nullable: false),
                     Password = table.Column<string>(nullable: true)
                 },
                 constraints: table =>

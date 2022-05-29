@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "25Ti9LLpEZGCFQHIAuZ1JHuIQd0LSQ+Dqtt3cvxAHdgLtHGHqKNfWJKYndEy3yTNKQx737oTYxeSotD+WoUxug==",
+  "dgSpecHash": "GvKFfTTy7jkPSoMjAaeTWuK4e4cndRQ1A82dqQHm+7aH73iD4ZvosGWTUW2zPxs5HWYkotFt3bmAa9FL+TnKrw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nicholas.mantzivis\\source\\repos\\MindSurf\\MindSurf.csproj",
+  "projectFilePath": "C:\\Users\\nicholas.mantzivis\\Desktop\\Personal\\MindSurf\\MindSurf.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nicholas.mantzivis\\.nuget\\packages\\bcrypt.net-next\\4.0.2\\bcrypt.net-next.4.0.2.nupkg.sha512",
     "C:\\Users\\nicholas.mantzivis\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",

@@ -8,7 +8,7 @@ using MindSurf.Data;
 namespace MindSurf.Migrations
 {
     [DbContext(typeof(UserContext))]
-    [Migration("20220522113617_CreateUsersTable")]
+    [Migration("20220529071000_CreateUsersTable")]
     partial class CreateUsersTable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -32,6 +32,9 @@ namespace MindSurf.Migrations
 
                     b.Property<string>("Password")
                         .HasColumnType("text");
+
+                    b.Property<bool>("RememberMe")
+                        .HasColumnType("tinyint(1)");
 
                     b.HasKey("Id");
 

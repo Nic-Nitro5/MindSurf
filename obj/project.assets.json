@@ -6543,11 +6543,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nicholas.mantzivis\\source\\repos\\MindSurf\\MindSurf.csproj",
+      "projectUniqueName": "C:\\Users\\nicholas.mantzivis\\Desktop\\Personal\\MindSurf\\MindSurf.csproj",
       "projectName": "MindSurf",
-      "projectPath": "C:\\Users\\nicholas.mantzivis\\source\\repos\\MindSurf\\MindSurf.csproj",
+      "projectPath": "C:\\Users\\nicholas.mantzivis\\Desktop\\Personal\\MindSurf\\MindSurf.csproj",
       "packagesPath": "C:\\Users\\nicholas.mantzivis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nicholas.mantzivis\\source\\repos\\MindSurf\\obj\\",
+      "outputPath": "C:\\Users\\nicholas.mantzivis\\Desktop\\Personal\\MindSurf\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nicholas.mantzivis\\AppData\\Roaming\\NuGet\\NuGet.Config",
