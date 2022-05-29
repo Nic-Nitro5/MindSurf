@@ -81,7 +81,7 @@ namespace MindSurf.Controllers
             }
             catch
             {
-                return BadRequest(new { message = "unauthorized" });
+                return Ok(new { message = "unauthorized" });
             }
         }
 
